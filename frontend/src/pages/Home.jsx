@@ -1,36 +1,31 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Navbar from '../components/Navbar';
+import backgroundImage from '../assets/Background.jpg'; // Import your image
 
 const Home = () => {
-  const [animate, setAnimate] = useState(false);
-
-  useEffect(() => {
-    setAnimate(true); // Trigger animation on component mount
-  },);
-
   return (
-    <div className="bg-gradient-to-br from-blue-100 to-blue-300 min-h-screen ">
-      <div>
+    <div
+      className="min-h-screen bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `url(${backgroundImage})` }}
+    >
+      <div className="bg-gradient-to-br from-blue-100 bg-opacity-50 min-h-screen flex flex-col">
         <Navbar />
-        <div className="mt-16 text-center">
-          <h1 className="text-4xl font-extrabold text-blue-800 mb-6">
-            Welcome to Technology Library
-          </h1>
-          <div
-            className={`inline-block text-2xl font-semibold text-indigo-600 transition-opacity duration-100 ${
-              animate ? 'opacity-100' : 'opacity-0' // Corrected line
-            }`}
-            style={{ opacity: 0.5 }} // Added initial opacity
-          >
-            Your Gateway to Knowledge! 📚✨
+        <main className="flex-grow flex items-center justify-center">
+          <div className="text-center max-w-4xl p-8">
+            <h1 className="text-5xl md:text-6xl font-extrabold text-blue-900 mb-8">
+              Welcome to the Technology Library
+            </h1>
+            <p className="text-lg md:text-xl text-gray-900 mb-6">
+              Explore the frontiers of knowledge. A world of advanced research and digital discovery awaits.
+            </p>
+            <p className="text-lg md:text-xl text-gray-900 mb-8">
+              Your learning journey, simplified. Access, manage, and expand your horizons with ease.
+            </p>
+            <button className="text-white font-semibold bg-blue-600 hover:bg-indigo-600 px-6 py-3 rounded-lg text-lg transition-colors duration-300">
+              Explore Our Services
+            </button>
           </div>
-          <p className="mt-8 text-lg text-gray-700 max-w-2xl mx-auto">
-            Explore a vast collection of books, research materials, and digital resources.
-          </p>
-          <p className="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">
-            Search, borrow, and manage your favorite reads with ease. Start your journey towards endless learning today!
-          </p>
-        </div>
+        </main>
       </div>
     </div>
   );

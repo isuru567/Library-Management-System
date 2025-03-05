@@ -11,7 +11,7 @@ const Navbar = () => {
           {/* Logo/Brand */}
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center">
-              <span className="text-white font-bold text-xl">Library System</span>
+              <span className="text-white font-bold text-xl">Technology</span>
             </Link>
           </div>
 
@@ -23,10 +23,10 @@ const Navbar = () => {
 
             {/* Centered Menu Items */}
             <div className="flex items-center space-x-4">
-              <Link to="/" className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium transition-colors duration-200">Home</Link>
-              <Link to="/about" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium transition-colors duration-200">About Us</Link>
-              <Link to="/services" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium transition-colors duration-200">Services</Link>
-              <Link to="/contact" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium transition-colors duration-200">Contact</Link>
+              <Link to="/Home" className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium transition-colors duration-200">Home</Link>
+              <Link to="/Services" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium transition-colors duration-200">Services</Link>
+              <Link to="/Contact" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium transition-colors duration-200">Contact</Link>
+              <Link to="/About" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium transition-colors duration-200">About Us</Link>
             </div>
 
             {/* Auth Buttons */}
@@ -72,10 +72,10 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-          <Link to="/" className="text-white block px-3 py-2 rounded-md text-base font-medium bg-gray-900">Home</Link>
-          <Link to="/about" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About Us</Link>
+          <Link to="/Home" className="text-white block px-3 py-2 rounded-md text-base font-medium bg-gray-900">Home</Link>
           <Link to="/services" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</Link>
           <Link to="/contact" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</Link>
+          <Link to="/about" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About Us</Link>
 
           {/* Mobile Auth Buttons */}
           <div className="pt-4 pb-3 border-t border-gray-700">
