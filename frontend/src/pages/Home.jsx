@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import backgroundImage from '../assets/Background.jpg'; // Import your image
+import backgroundImage from '../assets/Background.jpg'; 
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -21,9 +22,12 @@ const Home = () => {
             <p className="text-lg md:text-xl text-gray-900 mb-8">
               Your learning journey, simplified. Access, manage, and expand your horizons with ease.
             </p>
-            <button className="text-white font-semibold bg-blue-600 hover:bg-indigo-600 px-6 py-3 rounded-lg text-lg transition-colors duration-300">
+            <div className=" ">
+            <Link to= "/Services" className="text-white font-semibold bg-blue-600 hover:bg-indigo-600 px-6 py-3 rounded-lg text-lg transition-colors duration-300">
               Explore Our Services
-            </button>
+            </Link >
+            
+            </div>
           </div>
         </main>
       </div>

@@ -29,11 +29,8 @@ const Navbar = () => {
               <Link to="/About" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium transition-colors duration-200">About Us</Link>
             </div>
 
-            {/* Auth Buttons */}
-            <div className="flex items-center space-x-2">
-              <Link to="/login" className="text-gray-300 bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200">Login</Link>
-              <Link to="/register" className="text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200">Register</Link>
-            </div>
+            
+            
           </div>
 
           {/* Mobile menu button */}
@@ -77,13 +74,8 @@ const Navbar = () => {
           <Link to="/contact" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</Link>
           <Link to="/about" className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">About Us</Link>
 
-          {/* Mobile Auth Buttons */}
-          <div className="pt-4 pb-3 border-t border-gray-700">
-            <div className="flex items-center space-x-2 px-3">
-              <Link to="/login" className="text-gray-300 bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200">Login</Link>
-              <Link to="/register" className="text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md text-sm font-medium transition-colors duration-200">Register</Link>
-            </div>
-          </div>
+          
+          
         </div>
       </div>
     </div>
